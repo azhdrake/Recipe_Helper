@@ -38,6 +38,13 @@ namespace RecipeHelper
 
         txtCtemp.Focus();
       }
+      else if (validVolume && txtCtemp.Text.Trim() == "") //for if only volume has data
+      {
+        //Set the text fields to the caculated values
+        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString();
+
+        txtmL.Focus();
+      }
     }
   }
 }
