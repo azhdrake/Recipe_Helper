@@ -19,7 +19,14 @@ namespace RecipeHelper
 
     private void buttConvert_Click(object sender, EventArgs e)
     {
+      //Data validation.
+      bool validTemp = double.TryParse(txtCtemp.Text, out double CTemp);
+      bool validVolume = double.TryParse(txtmL.Text, out double mL);
 
+      if(validTemp && validVolume)
+      {
+
+      }
     }
   }
 }
