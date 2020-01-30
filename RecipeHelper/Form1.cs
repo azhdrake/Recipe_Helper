@@ -26,22 +26,22 @@ namespace RecipeHelper
       if(validTemp && validVolume) //for if both fields have data
       {
         //Set the text fields to the caculated values
-        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString();
-        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString();
+        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString("0.00");
+        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString("0.00");
 
         txtCtemp.Focus();
       }
       else if (validTemp && txtmL.Text.Trim() == "") //for if only temp has data
       {
         //Set the text fields to the caculated values
-        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString();
+        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString("0.00");
 
         txtCtemp.Focus();
       }
       else if (validVolume && txtCtemp.Text.Trim() == "") //for if only volume has data
       {
         //Set the text fields to the caculated values
-        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString();
+        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString("0.00");
 
         txtmL.Focus();
       }
