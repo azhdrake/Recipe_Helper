@@ -23,9 +23,13 @@ namespace RecipeHelper
       bool validTemp = double.TryParse(txtCtemp.Text, out double CTemp);
       bool validVolume = double.TryParse(txtmL.Text, out double mL);
 
-      if(validTemp && validVolume)
+      if(validTemp && validVolume) //for if both fields have data
       {
+        //Set the text fields to the caculated values
+        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString();
+        txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString();
 
+        txtCtemp.Focus();
       }
     }
   }

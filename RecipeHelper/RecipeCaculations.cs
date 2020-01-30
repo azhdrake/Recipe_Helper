@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace RecipeHelper
 {
-  class RecipeCaculations
+  public static class RecipeCaculations
   {
-    public double CaculateTemp(double degreesC)
+    public static double CaculateTemp(double degreesC)
     {
       double degreesF = degreesC * (9 / 5) + 32;
       return degreesF;
     }
 
-    public double CaculateVolume(double mL)
+    public static double CaculateVolume(double mL)
     {
       double cups = mL / 263.59;
       return cups;
