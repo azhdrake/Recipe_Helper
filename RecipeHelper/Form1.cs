@@ -45,6 +45,10 @@ namespace RecipeHelper
 
         txtmL.Focus();
       }
+      else //for if invalid data was given.
+      {
+        MessageBox.Show("Please enter numbers with no units attached.");
+      }
     }
   }
 }
