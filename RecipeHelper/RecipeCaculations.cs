@@ -10,7 +10,7 @@ namespace RecipeHelper
   {
     public static double CaculateTemp(double degreesC)
     {
-      double degreesF = degreesC * (9 / 5) + 32;
+      double degreesF = degreesC * 9 / 5 + 32;
       return degreesF;
     }
 
