@@ -35,6 +35,7 @@ namespace RecipeHelper
       {
         //Set the text fields to the caculated values
         txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString("0.00");
+        txtCups.Text = "";
 
         txtCtemp.Focus();
       }
@@ -42,6 +43,7 @@ namespace RecipeHelper
       {
         //Set the text fields to the caculated values
         txtCups.Text = RecipeCaculations.CaculateVolume(mL).ToString("0.00");
+        txtFtemp.Text = "";
 
         txtmL.Focus();
       }
