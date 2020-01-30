@@ -31,6 +31,13 @@ namespace RecipeHelper
 
         txtCtemp.Focus();
       }
+      else if (validTemp && txtmL.Text.Trim() == "") //for if only temp has data
+      {
+        //Set the text fields to the caculated values
+        txtFtemp.Text = RecipeCaculations.CaculateTemp(CTemp).ToString();
+
+        txtCtemp.Focus();
+      }
     }
   }
 }
